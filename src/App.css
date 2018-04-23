@@ -1,0 +1,167 @@
+.Game-Page {
+  text-align: center;
+  background-color: #404040;
+  height: 100vh;
+  position: relative;
+}
+
+
+.Game-logo {
+  animation: Game-logo-spin infinite 20s linear;
+  height: 80px;
+  margin-top: 50px;
+}
+
+.App-header {
+  background-color: #21bff0;
+  height: 52vh;
+  padding: 20px;
+  color: white;
+}
+
+.Game-page-header {
+  background-color: #21bff0;
+  height: 10vh;
+  padding: 10px;
+  color: #404040;
+}
+
+.App-title {
+  font-size: 2em;
+  color: #404040;
+  margin-top: 40px;
+}
+
+.Game-title {
+  font-size: 1.7em;
+  color: #404040;
+  margin-top: 15px;
+}
+
+.Game-intro {
+  font-size: large;
+  margin-top: 50px;
+  color: white;
+}
+
+@keyframes Game-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.Red-color{
+  background-color: red!important;
+  margin: 40px!important;
+}
+
+.Yellow-color{
+  background-color: yellow!important;
+  margin: 40px!important;
+}
+
+.empty-box {
+  height: 50px;
+  width: 50px;
+  background-color: #404040;
+  border-radius: 100px;
+}
+
+.red-box {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  border-radius: 100px;
+  transition: background-color 0.5s;
+}
+
+.yellow-box {
+  height: 50px;
+  width: 50px;
+  background-color: yellow;
+  border-radius: 100px;
+  transition: background-color 0.5s;
+}
+
+.box {
+  height: 62px;
+  width: 62px;
+  background-color: #21bff0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.board {
+  margin: 30px 0px 40px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  flex-direction: column;
+}
+
+.message {
+  color: white;
+  font-size: 50px; 
+  width: max-content;
+}
+
+.disk {
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+  border: 0px solid #000;
+  border-radius: 100px;
+  animation: bounce 1s;
+  animation-direction: alternate;
+  animation-timing-function: cubic-bezier(.5,0.05,1,.5);
+  animation-iteration-count: infinite;
+}
+
+.disks {
+  margin: 40px 0 25px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.red-disk {
+  background-color: red;
+}
+
+.yellow-disk {
+  background-color: yellow;
+}
+
+.white-disk {
+  background-color: white;
+}
+
+@keyframes bounce {
+  from { transform: translate3d(0, 0, 0);     }
+  to   { transform: translate3d(0, 30px, 0); }
+  
+}
+
+.new-game{
+  margin-top: 80px!important;
+}
+
+.new-game-button {
+  font-size: 20px;
+  color: #404040;
+}
+
+.info-button {
+  background-color: #21bff0!important;
+  position: absolute!important;
+  right: 20px!important;
+  bottom: 20px!important;
+}
+
+.rules{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  color: #404040;
+}
